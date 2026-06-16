@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import "./Home.css"; 
+import "./home.css"; 
 import { Link } from 'react-router-dom';
 import ProductCarrusel from '../components/ProductCarrusel';
 import ReelsCarrusel from '../components/ReelsCarrusel'; 
