@@ -1,0 +1,321 @@
+.catalogo-cosmetica {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner-container {
+  margin-bottom: 30px;
+}
+
+.add-to-cart-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #4CA54C;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(76, 165, 76, 0.2);
+}
+.banner-cosmetica{
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 14px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+
+.cosmetica-filter-bar {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.cosmetica-filter-bar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+.cosmetica-filter-bar button {
+  background-color: #f7f6f2; 
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+.cosmetica-filter-bar button:hover { 
+  background-color: #e1e6d4;
+  transform: scale(1.03)
+}
+.cosmetica-filter-bar button.active { 
+  background-color: #5a8a66; 
+  color: #ffffff;
+  border-color: #5a8a66;
+}
+.cosmetica-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+
+.cosmetica-card {
+  
+  background: #f4f4e8; 
+  border: 1px solid #e2e2d0; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+  display: flex;
+  flex-direction: column;
+  padding: 15px; 
+  width: 100%; 
+  height: 100%; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.cosmetica-card:hover {
+  transform: translateY(-5px);
+  border-color: #d4d4c0; 
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cosmetica-offer-tag { 
+  position: absolute; 
+  top: 15px; right: 15px; left: auto;
+  background-color: #e74c3c; 
+  color: white; 
+  padding: 4px 10px; 
+  border-radius: 5px; 
+  font-size: 0.75rem; 
+  font-weight: bold; 
+  z-index: 10; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.cosmetica-image-container { 
+  width: 100%; 
+  aspect-ratio: 1 / 1; 
+  overflow: hidden; 
+  border-radius: 10px; 
+  margin-bottom: 15px; 
+  background-color: #fff; 
+}
+
+.cosmetica-image { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  transition: transform 0.5s ease; 
+}
+
+.cosmetica-card:hover .cosmetica-image { 
+  transform: scale(1.05); 
+}
+
+.cosmetica-info { 
+  flex-grow: 1; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  text-align: center; 
+}
+
+.cosmetica-name { 
+  margin: 5px 0 10px 0; 
+  font-size: 1.2rem; 
+  font-weight: 700; 
+  line-height: 1.3; 
+}
+.cosmetica-name a { text-decoration: none; 
+  color: #333; 
+  transition: color 0.2s; 
+}
+.cosmetica-name a:hover { 
+  color: #4CA54C; 
+}
+
+
+.cosmetica-prices { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 15px; 
+  gap: 10px;
+}
+.cosmetica-price { 
+  color: #4CA54C; 
+  font-weight: bold; 
+  font-size: 1.4rem; 
+  margin: 0; 
+}
+
+.cosmetica-btn { 
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background-color: #4CA54C; 
+  color: white; 
+  border: none; 
+  padding: 12px 20px; 
+  border-radius: 30px; 
+  cursor: pointer; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  width: 100%; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(76, 165, 76, 0.2);
+}
+
+.cosmetica-btn:hover { 
+  background-color: #3e8e3e; 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(76, 165, 76, 0.3);
+}
+
+
+.cosmetica-pagination { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.cosmetica-pagination ul { 
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px; 
+}
+.cosmetica-pagination button, .cosmetica-pagination span {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  width: 40px; 
+  height: 40px;
+  border: 1px solid #e0e0e0; 
+  border-radius: 50%; 
+  background-color: #fff; 
+  font-size: 0.9rem; 
+  color: #555;
+  cursor: pointer; 
+  transition: background-color 0.3s, 
+  color 0.3s, 
+  transform 0.2s;
+}
+
+.cosmetica-pagination button:hover { 
+  background-color: #f7f6f2; 
+  transform: scale(1.05); 
+}
+
+.cosmetica-pagination button.active {
+  background-color: #5a8a66; color: #fff;
+  border-color: #5a8a66;
+}
+
+.cosmetica-pagination span { 
+  border: none; cursor: default; 
+  background: none; 
+}
+
+.cosmetica-pagination button i {
+  font-size: 0.75rem; 
+}
+
+.cosmetica-beneficios-container {
+  width: 100%;           
+  padding: 0 10px;       
+  box-sizing: border-box;
+  margin-bottom: 15px;   
+  min-height: 45px;    
+}
+
+.cosmetica-beneficios {
+  font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 10px 0;
+    width: 100%;
+    padding: 0 5px; 
+    box-sizing: border-box; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;        
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    word-break: break-word;  
+    min-height: 42px;   
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.pagination-btn, 
+.pagination-number {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.pagination-btn:hover:not(:disabled),
+.pagination-number:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+.pagination-number.active {
+    background-color: #333; 
+    color: white;
+    border-color: #333;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #eee;
+}
+
+.add-to-cart-btn:disabled,
+.cosmetica-btn:disabled {
+  background-color: #555 !important; 
+  color: white !important;
+  cursor: not-allowed;
+  box-shadow: none;    
+  transform: none;     
+  opacity: 0.8;       
+}
+
+.add-to-cart-btn:disabled:hover,
+.cosmetica-btn:disabled:hover {
+  background-color: #555 !important;
+  transform: none;
+}

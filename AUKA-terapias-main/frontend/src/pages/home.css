@@ -1,0 +1,372 @@
+:root {
+    --links: #C6E079;
+    --verde-vivo: #4CAF50;
+    --verde-vivo-oscuro: #618814;
+    --beige-borde: #D7DBCB;
+    --sombra-suave: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.home-hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/061/901/049/large_2x/natural-cosmetic-products-and-herbs-ingredients-for-skincare-body-and-hair-treatment-laying-on-a-gray-background-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.home-hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 128, 0, 0.5));
+}
+
+.home-hero-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-content {
+    margin-top: 100px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.button-group button {
+    padding: 12px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.button-group .primary-button {
+    background-color: #4CAF50;
+    color: white;
+}
+.button-group .primary-button:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+}
+
+.button-group .secondary-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+}
+.button-group .secondary-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.ofertas-barra {
+    background: linear-gradient(90deg, #c6e07d 0%, #a8c458 100%);
+    color: white;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+.marquee-content {
+    animation: scrolling 25s linear infinite;
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+}
+
+.marquee-content span {
+    margin-right: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.home-content {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-content h2 {
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.tarjeta-categoria {
+    flex: 1;
+    min-width: 300px;
+    max-width: 370px;
+    border: 5px solid var(--beige-borde);
+    padding: 20px;
+    border-radius: 20px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-categoria:hover {
+    border-color: var(--verde-vivo-oscuro);
+    transform: translateY(-5px);
+}
+
+.tarjeta-categoria i {
+    color: var(--verde-vivo-oscuro);
+    margin-bottom: 20px;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+}
+
+.tarjeta-categoria p {
+    color: #7A7A7A;
+    padding: 0 10px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.tarjeta-categoria h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta-categoria a {
+    margin-top: auto;
+    border: 3px solid rgba(129, 138, 111, 0.5);
+    border-radius: 20px;
+    width: 180px;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-categoria a:hover {
+    background-color: var(--verde-vivo-oscuro);
+    color: white;
+    border-color: var(--verde-vivo-oscuro);
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfcfc;
+    padding-bottom: 60px;
+}
+
+.section2 h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 50px;
+    color: #333;
+}
+
+.section-completa {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.blog {
+    width: 60%;
+}
+
+.blog h1 {
+    display: none;
+}
+
+.grid-blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.tarjeta-blog {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: left;
+}
+
+.tarjeta-blog img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-blog:hover img {
+    transform: translateY(-3px);
+}
+
+.tarjeta-blog h3 {
+    color: var(--verde-vivo-oscuro);
+    font-size: 1.4rem;
+    margin: 5px 0;
+}
+
+.tarjeta-blog p {
+    line-height: 1.5em;
+    height: 4.5em;
+    overflow: hidden;
+    position: relative;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.tarjeta-blog p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5rem;
+    background: #fcfcfc;
+}
+
+.tarjeta-blog span {
+    color: #4CA54C;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.tarjeta-blog a {
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--verde-vivo-oscuro);
+    color: white;
+    height: 40px;
+    width: 140px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-blog a:hover {
+    background-color: #54701b;
+    box-shadow: 0 4px 10px rgba(97, 136, 20, 0.3);
+    transform: translateY(-2px);
+}
+
+.tarjeta-blog i {
+    margin-left: 10px;
+}
+
+.instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    max-width: 100%;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.instagram-button {
+    border: none;
+    color: white;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-size: 200% auto;
+    
+    padding: 12px 35px; 
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    transition: all 0.5s ease; 
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+}
+
+.instagram-button:hover {
+    background-position: right center; 
+    color: white;
+    box-shadow: 0 8px 25px rgba(220, 39, 67, 0.6);
+    transform: translateY(-3px);
+}
+
+.instagram-profile-block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.instagram-profile-block a {
+    font-family: inherit;
+    border: none;
+}
+
+.destacados {
+    width: 100%;
+    padding: 50px 0;
+}

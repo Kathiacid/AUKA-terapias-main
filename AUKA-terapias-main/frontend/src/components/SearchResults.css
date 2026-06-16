@@ -1,0 +1,50 @@
+.search-header-container {
+    margin-bottom: 30px;
+    text-align: left;
+    border-bottom: 2px solid #e2e2d0; /* Mismo borde que tus cards */
+    padding-bottom: 15px;
+}
+
+.search-header-container h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.search-header-container h1 span {
+    color: #4CA54C; /* Tu verde corporativo */
+}
+
+.search-header-container p {
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+}
+
+/* Estado Vacío */
+.no-results-box {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4e8; /* Tu fondo beige claro */
+    border-radius: 15px;
+    border: 1px dashed #d4d4c0;
+}
+
+.no-results-box i {
+    font-size: 4rem;
+    color: #d4d4c0;
+    margin-bottom: 20px;
+}
+
+.no-results-box h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.no-results-box p {
+    color: #666;
+    margin-bottom: 30px;
+}
