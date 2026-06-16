@@ -1,7 +1,10 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-    baseURL: 'http://127.0.0.1:8000/api/v1', 
+    // Si existe la variable de Vite (en Vercel/Render, etc.), usa esa. Si no, usa localhost para pruebas locales.
+    baseURL: import.meta.env.VITE_API_URL 
+        ? `${import.meta.env.VITE_API_URL}/api/v1` 
+        : 'http://127.0.0.1:8000/api/v1', 
     headers: {
         'Content-Type': 'application/json',
     },
